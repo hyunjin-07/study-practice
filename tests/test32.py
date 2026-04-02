@@ -1,3 +1,6 @@
+# pip install customtkinter
+# (tkinter comes with Python)
+
 import customtkinter as ctk
 
 # 기본 설정
