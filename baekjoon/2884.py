@@ -1,19 +1,20 @@
 # problem: 2884
 # tier: bronze
 
-H, M = map(int, (input().split()))
+# 시간(H), 분(M) 입력
+H, M = map(int, input().split())
 
-#45분보다 크거나 같으면 -45분
+# 45분 앞당기기 로직
 if M >= 45:
-    M = M - 45
-#45분보다 작으면  
+    M -= 45
 else:
-    #1시간을 빼고
+    # 0시인 경우 23시로, 그 외는 1시간 차감
     if H == 0:
         H = 23
     else:
-        H = H - 1
-    #15분을 더함
-    M = M + 15
+        H -= 1
+    # 부족한 분 계산 (60 - 45 + M)
+    M += 15
 
+# 결과 출력
 print(H, M)
