@@ -1,10 +1,11 @@
-# Problem: 25083
-# Tier: Bronz
+# problem: 25083
+# tier: bronze
 
-# \ 는 이스케이프 문자라서 \\ 이렇게 두 번 써야 출력됨
+# 새싹 모양 ASCII 아트 출력
+# 백슬래시(\)와 큰따옴표(") 처리에 주의
 print("         ,r'\"7")
 print("r`-_   ,'  ,/")
-print(" \\. \". L_r'")
-print("   `~\\/")
+print(" \. \". L_r'")
+print("   `~\/")
 print("      |")
 print("      |")
